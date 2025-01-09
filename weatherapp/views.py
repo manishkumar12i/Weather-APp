@@ -7,7 +7,7 @@ def home(request):
     city = request.POST.get('city', '').strip()
     if not city:
         city = "Delhi"
-    api_key = '0f17892c6d90393bb3fb123b063061d8'
+    api_key = 'use own api'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     PARAMS = {'units': 'metric'}
     
